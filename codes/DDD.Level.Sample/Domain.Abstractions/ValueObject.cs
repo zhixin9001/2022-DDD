@@ -2,6 +2,8 @@
 
 public abstract class ValueObject
 {
+    private string a;
+
     protected static bool EqualOperator(ValueObject left, ValueObject right)
     {
         if (ReferenceEquals(left, null) ^ ReferenceEquals(right, null))
@@ -18,8 +20,7 @@ public abstract class ValueObject
     }
 
     protected abstract IEnumerable<object> GetAtomicValues();
-    
-    
+
     public override bool Equals(object obj)
     {
         if (obj == null || obj.GetType() != GetType())
@@ -40,6 +41,7 @@ public abstract class ValueObject
                 return false;
             }
         }
+
         return !thisValues.MoveNext() && !otherValues.MoveNext();
     }
 

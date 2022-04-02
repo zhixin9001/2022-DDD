@@ -4,10 +4,15 @@
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <CodeAnalysisRuleSet>common.ruleset</CodeAnalysisRuleSet>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="MediatR" Version="10.0.1" />
+      <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="3.3.2">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
     </ItemGroup>
 
 </Project>
