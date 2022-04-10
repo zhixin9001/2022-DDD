@@ -1,7 +1,0 @@
-<?xml version="1.0"?>
-<RuleSet Name="common ruleset" ToolsVersion="15.0">
-    <Rules AnalyzerId="Microsoft.CodeAnalysis.FxCopAnalyzers" RuleNamespace="Microsoft.CodeAnalysis.FxCopAnalyzers">
-        <Rule Id="CA1014" Action="None" />           <!-- Mark assemblies with CLSCompliant -->
-        <Rule Id="CA1801" Action="Error" />          <!-- Review unused parameters -->
-    </Rules>
-</RuleSet>
